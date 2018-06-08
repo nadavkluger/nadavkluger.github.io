@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>simulations</title>
+	<script src="collision.js">
+	</script>
+	<script src="vector.js">
+	</script>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+	This is an elastic collision simulation in two dimensions using <a href="https://evanw.github.io/lightgl.js/docs/vector.html">vector.js</a>
+	<div>
+		<br>
+		<input style="width: 300px" value="5" type="range" name="rangeInput" min="0" max="100" oninput="update(this.value);">
+		<div id="label">
+
+		</div>
+		<br>
+
+	</div>
+	<canvas id="canvasFrame" align="center">
+	</canvas>
+<script>init(2)</script>
+</body>
+</html>
